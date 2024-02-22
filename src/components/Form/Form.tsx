@@ -34,8 +34,11 @@ export default function Form() {
       <h2 className="font-bold text-4xl">Registro </h2>
 
       <div className="flex flex-col gap-1 sm:w-auto lg:w-96">
-        <label className="font-bold">Nome</label>
+        <label className="font-bold" htmlFor="nome">
+          Nome
+        </label>
         <input
+          id="nome"
           type="text"
           placeholder="Nome"
           className="rounded-md px-3 outline-none h-9 text-gray-50 bg-black"
@@ -69,7 +72,7 @@ export default function Form() {
           <span style={{ color: "red" }}>{errors.email.message}</span>
         )}
       </div>
-      <button className="bg-black h-9 rounded-lg my-2 font-bold border border-black hover:bg-white hover:text-black duration-200 ease-in-out sm:w-auto lg:w-96 p-2 flex items-center">
+      <button className="bg-black h-9 rounded-lg my-2 font-bold border border-black hover:bg-white hover:text-black duration-200 ease-in-out sm:w-auto lg:w-96 p-auto">
         Salvar
       </button>
     </form>
