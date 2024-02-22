@@ -31,7 +31,7 @@ export default function Form() {
       onSubmit={handleSubmit(handleRegister)}
       className="bg-gray-800 p-8 flex flex-col items-center gap-3 rounded-lg md:flex"
     >
-      <h2 className="font-bold text-4xl">Registro</h2>
+      <h2 className="font-bold text-4xl">Registro </h2>
 
       <div className="flex flex-col gap-1 sm:w-auto lg:w-96">
         <label className="font-bold">Nome</label>
